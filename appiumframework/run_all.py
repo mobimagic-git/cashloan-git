@@ -30,7 +30,7 @@ if __name__ == '__main__':
     runner = HTMLTestRunner.HTMLTestRunner(
         stream=fp,
         title=report_title,
-        description='用例执行情况'
+        description='Case Execution'
 
     )
     runner.run(testlist)

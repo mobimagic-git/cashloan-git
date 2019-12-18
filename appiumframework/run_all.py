@@ -23,7 +23,7 @@ report_path = os.path.join(cur_path,"Report")
 if __name__ == '__main__':
     testlist = unittest.defaultTestLoader.discover(testcase_path, pattern='test*.py')
     report_time = time.strftime('%Y%m%d %X', time.localtime())
-    report_title = '360Security测试报告' + report_time + '.html'
+    report_title = '360SecurityReport' + report_time + '.html'
     result_path = os.path.join(report_path,report_title)
 
     fp = open(result_path, 'wb')

@@ -2,7 +2,7 @@ import time
 import os
 import unittest
 import HTMLTestRunner
-from appium import webdriver
+
 
 
 cur_path = os.getcwd()

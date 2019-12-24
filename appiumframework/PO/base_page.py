@@ -1,8 +1,6 @@
 from selenium.webdriver.support.wait import WebDriverWait
-from appium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from  appiumframework.PO import base_page
+
 
 
 class BasePage(object):

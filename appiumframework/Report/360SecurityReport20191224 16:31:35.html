@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>360Security测试报告20191129 17:55:30.html</title>
+    <title>360SecurityReport20191224 16:31:35.html</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>360Security测试报告20191129 17:55:30.html</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-11-29 17:55:30</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.000314</p>
-<p class='attribute'><strong>Status:</strong> Error 1</p>
+<h1>360SecurityReport20191224 16:31:35.html</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-12-24 16:31:35</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:24.430298</p>
+<p class='attribute'><strong>Status:</strong> Error 2</p>
 
-<p class='description'>用例执行情况</p>
+<p class='description'>Case Execution</p>
 </div>
 
 
@@ -222,16 +222,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
-    <td>1</td>
+    <td>test_case_boost.SecurityTest</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_case_boost</div></td>
+    <td class='errorCase'><div class='testcase'>test_Boost</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -245,30 +245,38 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: ImportError: Failed to import test module: test_case_boost
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 14, in &lt;module&gt;
-    class SecurityTest(unittest.TestCase):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 26, in SecurityTest
-    time.sleep(15)
-KeyboardInterrupt
+ft1.1: Traceback (most recent call last):
+  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 26, in test_Boost
+    HomePage(self.driver).click_boost_button()
+NameError: global name 'HomePage' is not defined
 
-ImportError: Failed to import test module: test_case_boost
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 14, in &lt;module&gt;
-    class SecurityTest(unittest.TestCase):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 26, in SecurityTest
-    time.sleep(15)
-KeyboardInterrupt
 
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_Clean</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 37, in test_Clean
+    HomePage(self.driver).click_clean_button()
+NameError: global name 'HomePage' is not defined
 
 
         </pre>
@@ -280,10 +288,10 @@ KeyboardInterrupt
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td>&nbsp;</td>
 </tr>
 </table>

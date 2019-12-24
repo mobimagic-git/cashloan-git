@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>360Security测试报告20191014 11:27:32.html</title>
+    <title>360SecurityReport20191224 16:27:28.html</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>360Security测试报告20191014 11:27:32.html</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-10-14 11:27:32</p>
-<p class='attribute'><strong>Duration:</strong> 0:02:25.194129</p>
-<p class='attribute'><strong>Status:</strong> Pass 2</p>
+<h1>360SecurityReport20191224 16:27:28.html</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-12-24 16:27:28</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.000192</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
-<p class='description'>用例执行情况</p>
+<p class='description'>Case Execution</p>
 </div>
 
 
@@ -221,31 +221,55 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>test_case_boost.SecurityTest</td>
-    <td>2</td>
-    <td>2</td>
+<tr class='errorClass'>
+    <td>unittest.loader.ModuleImportFailure</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_Boost</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_case_boost</div></td>
+    <td colspan='5' align='center'>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_Clean</div></td>
-    <td colspan='5' align='center'>pass</td>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: ImportError: Failed to import test module: test_case_boost
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 4, in &lt;module&gt;
+    from appiumframework.PO.base_page import BasePage
+ImportError: No module named appiumframework.PO.base_page
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>2</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

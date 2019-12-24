@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>360Security测试报告20191014 11:07:16.html</title>
+    <title>360SecurityReport20191224 16:29:13.html</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>360Security测试报告20191014 11:07:16.html</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-10-14 11:07:16</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:05.708586</p>
-<p class='attribute'><strong>Status:</strong> Error 2</p>
+<h1>360SecurityReport20191224 16:29:13.html</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-12-24 16:29:13</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.000144</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
-<p class='description'>用例执行情况</p>
+<p class='description'>Case Execution</p>
 </div>
 
 
@@ -222,16 +222,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>test_case_boost.SecurityTest</td>
-    <td>2</td>
+    <td>unittest.loader.ModuleImportFailure</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Boost</div></td>
+    <td class='errorCase'><div class='testcase'>test_case_boost</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -245,102 +245,16 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 16, in find_element
-    WebDriverWait(self.driver, 10, 0.5).until(EC.visibility_of_element_located(loc))
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-
-
-During handling of the above exception, another exception occurred:
-
+ft1.1: ImportError: Failed to import test module: test_case_boost
 Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 46, in test_Boost
-    assertt = BoostPage(self.driver).finish_text_name()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/Pages/boost_page.py", line 15, in finish_text_name
-    return self.find_element(*self.finish_text).text
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 19, in find_element
-    print('页面未找到%s元素' % (loc))
-TypeError: not all arguments converted during string formatting
-Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 16, in find_element
-    WebDriverWait(self.driver, 10, 0.5).until(EC.visibility_of_element_located(loc))
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/loader.py", line 232, in _get_module_from_name
+    __import__(name)
+  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 4, in &lt;module&gt;
+    from appiumframework.Pages.home_page import HomePage
+ImportError: No module named appiumframework.Pages.home_page
 
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 46, in test_Boost
-    assertt = BoostPage(self.driver).finish_text_name()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/Pages/boost_page.py", line 15, in finish_text_name
-    return self.find_element(*self.finish_text).text
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 19, in find_element
-    print('页面未找到%s元素' % (loc))
-TypeError: not all arguments converted during string formatting
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Clean</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        error</a>
-
-    <div id='div_ft1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.2: Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 16, in find_element
-    WebDriverWait(self.driver, 10, 0.5).until(EC.visibility_of_element_located(loc))
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 55, in test_Clean
-    HomePage(self.driver).click_clean_button()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/Pages/home_page.py", line 16, in click_clean_button
-    return self.find_element(*self.clean_button).click()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 19, in find_element
-    print('页面未找到%s元素' % (loc))
-TypeError: not all arguments converted during string formatting
-Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 16, in find_element
-    WebDriverWait(self.driver, 10, 0.5).until(EC.visibility_of_element_located(loc))
-  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/shiyonglin/Desktop/script/appiumframework/TestCase/test_case_boost.py", line 55, in test_Clean
-    HomePage(self.driver).click_clean_button()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/Pages/home_page.py", line 16, in click_clean_button
-    return self.find_element(*self.clean_button).click()
-  File "/Users/shiyonglin/Desktop/script/appiumframework/PO/base_page.py", line 19, in find_element
-    print('页面未找到%s元素' % (loc))
-TypeError: not all arguments converted during string formatting
 
 
         </pre>
@@ -352,10 +266,10 @@ TypeError: not all arguments converted during string formatting
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

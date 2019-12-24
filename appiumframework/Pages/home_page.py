@@ -7,8 +7,8 @@ class HomePage(BasePage):
         #self.driver = driver
 
     #u '首页'
-    boost_button = (By.XPATH,"//*[@text='加速']")
-    clean_button = (By.XPATH,"//*[@text='清理']")
+    boost_button = (By.XPATH,"//*[@text='Boost']")
+    clean_button = (By.XPATH,"//*[@text='Clean']")
     cleannow_button = (By.ID,"com.qihoo.security:id/custom_button_text")
     def click_boost_button(self):
         return self.find_element(*self.boost_button).click()

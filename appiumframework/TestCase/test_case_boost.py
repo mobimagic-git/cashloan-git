@@ -17,8 +17,8 @@ class SecurityTest(unittest.TestCase):
     def setUpClass(cls):
         desire_caps  = dict()
         desire_caps ["platformName"] = "Android"
-        desire_caps ["deviceName"] = "VKZ5H6BUWKROLZ5T"
-        desire_caps ["platfromVersion"] = "5.0"
+        desire_caps ["deviceName"] = "HC49AMY01284"
+        desire_caps ["platfromVersion"] = "6.0"
         desire_caps ["appActivity"] = ".ui.main.HomeActivity"
         desire_caps ["appPackage"] = "com.qihoo.security"
         cls.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desire_caps)

@@ -1,7 +1,7 @@
 import time
 import unittest
 import HTMLTestRunner
-from appium import webdriver
+from selenium import webdriver
 
 class SecurityTest(unittest.TestCase):
 
